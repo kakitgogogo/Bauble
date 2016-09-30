@@ -1,0 +1,54 @@
+#!/bin/bash 
+
+if (( $# != 1 ))
+then
+    echo "Usage:tester n"
+    exit
+fi
+
+cd test$1
+source set
+#source /home/kakit/shengwu/test1/ans
+
+rm -f err
+touch err
+
+sum=0
+for (( i=1; i <= $num; i++ ))
+do
+	file=$i
+	exec 0< $file
+	text=""
+	while read line
+	do
+		if [ -z $line ]
+		then
+		    break
+		fi
+		text=${text}$line"\n"
+	done
+	cmd="zenity --list --radiolist --title Tester --text $text --width 750 --height 500 --column Select --column Option "
+	for (( j=1; j <= 4; j++ ))
+	do
+		read option
+		cmd=${cmd}" FALSE $option"
+	done
+	selection=`$cmd`
+	if [ $? -eq 1 ]
+	then
+	    break
+	fi
+
+	#echo $selection
+
+	read ans
+
+	if [ $ans = ${selection:0:1} ] 
+	then
+         sum=$[ $sum + $avg ]
+     else
+     	echo $i >> err
+     fi
+done
+
+zenity --info --text "Your score is $sum"
