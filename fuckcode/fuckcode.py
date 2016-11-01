@@ -25,9 +25,9 @@ logger = logging.getLogger(__name__)
 tag_map = {
 	".c" :	["//", "/\*", "\*/"],
 	".cpp" :	["//", "/\*", "\*/"],
-	".asm":	["\;", "null", "null"],
+	".asm":	["\;", "", ""],
 	".py":	["#", "'''", "'''"],
-	".html":	["null", "<!--", "-->"]
+	".html":	["", "<!--", "-->"]
 }
 
 def initLogger():
@@ -38,7 +38,7 @@ def initLogger():
 	logger.addHandler(handler)
 
 def delete_block_comment(text, tag):
-	if tag[1] != "null":
+	if tag[1] != "":
 		pattern = re.compile(tag[1] + ".*?" + tag[2], re.S)
 		return re.sub(pattern, "", text)
 	return text
