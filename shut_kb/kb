@@ -1,0 +1,10 @@
+#!/bin/bash
+
+num=`xinput | grep "AT Translated Set 2 keyboard" | awk '{print $7}' | sed -n 's/id=//p'`
+
+if [ $# -gt 0 ] 
+then
+	xinput enable $num
+else
+	xinput disable $num
+fi
