@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+{% block title %}Process Info{% endblock %}
+{% block head %}
+	{{ super() }}
+{% endblock %}
+
+{% block content %}
+	<div class="page-header">
+		<a href="{{ url_for('main.process', pid=pid , part='process') }}" {% if part == 'process' %}id="display"{% endif %}>进程</a>
+		<a href="{{ url_for('main.process', pid=pid , part='memory') }}" {% if part == 'memory' %}id="display"{% endif %}>进程内存</a>
+		<a href="{{ url_for('main.process', pid=pid , part='threads') }}" {% if part == 'threads' %}id="display"{% endif %}>线程</a>
+		<a href="{{ url_for('main.process', pid=pid , part='files') }}" {% if part == 'files' %}id="display"{% endif %}>文件</a>
+		<a href="{{ url_for('main.process', pid=pid , part='connections') }}" {% if part == 'connections' %}id="display"{% endif %}>连接</a>
+		<a href="{{ url_for('main.process', pid=pid , part='environ') }}" {% if part == 'environ' %}id="display"{% endif %}>环境</a>
+		<a href="{{ url_for('main.process', pid=pid , part='children') }}" {% if part == 'children' %}id="display"{% endif %}>子进程</a>
+		<a href="{{ url_for('main.process', pid=pid , part='limits') }}" {% if part == 'limits' %}id="display"{% endif %}>资源限制</a>
+	</div>
+	<div>
+		{% block process %}{% endblock %}
+	</div>
+{% endblock %}
