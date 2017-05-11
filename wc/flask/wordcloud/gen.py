@@ -9,15 +9,15 @@ def cutword(text):
 	segment = r' '.join(segment)
 	return segment
 
-text = open('text', encoding='utf-8').read()
+text = open('wordcloud/text', encoding='utf-8').read()
 
 text = cutword(text)
 
-back_mask = imread('image/love.jpg')
-alice_coloring = imread('image/alice.png')
+back_mask = imread('wordcloud/image/love.jpg')
+alice_coloring = imread('wordcloud/image/alice.png')
 image_colors = ImageColorGenerator(alice_coloring)
 
-wc = WordCloud(	font_path='font/YaHeiConsolas.ttf',
+wc = WordCloud(	font_path='wordcloud/font/YaHeiConsolas.ttf',
 				background_color='white',
 				max_words=2000,
 				mask=back_mask,
@@ -26,4 +26,4 @@ wc = WordCloud(	font_path='font/YaHeiConsolas.ttf',
 
 wc.generate(text)
 
-wc.to_file("result.png")
+wc.to_file("static/result.png")
