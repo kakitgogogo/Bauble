@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+{% block title %}Would Cloud{% endblock %}
+{% block head %}
+	{{ super() }}
+{% endblock %}
+
+{% block content %}
+
+<div class="bg">
+	<img class="img-responsive center-block" src="{{ url_for('static', filename='result.png') }}">
+</div>
+
+<form>
+	<div class="form-group">
+		<label>input:</label>
+		<textarea class="form-control" rows="3" placeholder="input what you want to say"></textarea>
+	</div>
+	<input class="btn btn-default" type="submit" value="Submit">
+</form>
+
+{% endblock %}
