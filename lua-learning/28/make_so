@@ -1,0 +1,4 @@
+#!/bin/bash
+
+gcc -c -fpic $1.c -I /home/kakit/code/lua/src -llua5.1
+gcc -shared $1.o -o $1.so

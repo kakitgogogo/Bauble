@@ -1,0 +1,16 @@
+#!/bin/bash
+
+if [ $# -gt 0 ] 
+then
+	target=$1
+	if [ -e $target ]
+	then
+		./$target
+		exit 0
+	fi
+	shift 1
+	g++ -g -o $target $target.cpp ../../kakui/base/*.cpp $* -I ../../ -std=c++11
+	./$target
+else
+	echo "usage: cxx filename"
+fi

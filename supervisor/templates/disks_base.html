@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+{% block title %}Disk Info{% endblock %}
+{% block head %}
+	{{ super() }}
+{% endblock %}
+
+{% block content %}
+	<div class="page-header">
+		<a href="{{ url_for('main.disks', part='disk') }}" {% if part == 'disk' %}id="display"{% endif %}>硬盘信息</a>
+		<a href="{{ url_for('main.disks', part='partition') }}" {% if part == 'partition' %}id="display"{% endif %}>分区信息</a>
+		<a href="{{ url_for('main.disks', part='io') }}" {% if part == 'io' %}id="display"{% endif %}>IO信息</a>
+	</div>
+	<div>
+		{% block disks %}{% endblock %}
+	</div>
+{% endblock %}
