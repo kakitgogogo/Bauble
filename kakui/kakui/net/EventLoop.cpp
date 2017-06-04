@@ -122,6 +122,8 @@ void EventLoop::queueInLoop(const Functor& cb)
 
 	if(!isInLoopThread() || _callingPendingFunctors)
 	{
+		if(!isInLoopThread())
+			LOG_INFO << "should be executed in loop thread"; 
 		wakeup();
 	}
 }

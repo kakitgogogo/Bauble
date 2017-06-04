@@ -35,12 +35,12 @@ Logger::LogLevel gLogLevel = initLogLevel();
 
 const char* LogLevelName[Logger::NUM_LOG_LEVELS] =
 {
-	"TRACE ",
-	"DEBUG ",
-	"INFO  ",
-	"WARN  ",
-	"ERROR ",
-	"FATAL ",
+	" TRACE ",
+	" DEBUG ",
+	" INFO  ",
+	" WARN  ",
+	" ERROR ",
+	" FATAL ",
 };
 
 class T
@@ -95,7 +95,7 @@ Logger::Impl::Impl(LogLevel level, int savedErrno, const SourceFile& file, int l
 	formatTime();
 	CurrentThread::tid();
 	_stream << T(CurrentThread::tidString(), CurrentThread::tidStringLength());
-	_stream << T(LogLevelName[level], 6);
+	_stream << T(LogLevelName[level], 7);
 	if(savedErrno != 0)
 	{
 		_stream << strError(savedErrno) << " (errno=" << savedErrno << ")";
