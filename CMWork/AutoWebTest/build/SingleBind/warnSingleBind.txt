@@ -1,0 +1,27 @@
+missing module named 'PyQt5.sip' - imported by c:\users\kakit\appdata\local\programs\python\python36\lib\site-packages\PyInstaller\loader\rthooks\pyi_rth_qt5plugins.py
+missing module named resource - imported by posix, E:\Code\AutoWebTest\SingleBind.py
+missing module named posix - imported by os, E:\Code\AutoWebTest\SingleBind.py
+missing module named _posixsubprocess - imported by subprocess, E:\Code\AutoWebTest\SingleBind.py
+missing module named org - imported by pickle, E:\Code\AutoWebTest\SingleBind.py
+missing module named readline - imported by cmd, code, pdb, E:\Code\AutoWebTest\SingleBind.py
+excluded module named _frozen_importlib - imported by importlib, importlib.abc, E:\Code\AutoWebTest\SingleBind.py
+missing module named _frozen_importlib_external - imported by importlib._bootstrap, importlib, importlib.abc, E:\Code\AutoWebTest\SingleBind.py
+missing module named _winreg - imported by platform, selenium.webdriver.firefox.firefox_binary, E:\Code\AutoWebTest\SingleBind.py
+missing module named _scproxy - imported by urllib.request
+missing module named java - imported by platform, E:\Code\AutoWebTest\SingleBind.py
+missing module named 'java.lang' - imported by platform, xml.sax._exceptions, E:\Code\AutoWebTest\SingleBind.py
+missing module named vms_lib - imported by platform, E:\Code\AutoWebTest\SingleBind.py
+missing module named termios - imported by tty, getpass, E:\Code\AutoWebTest\SingleBind.py
+missing module named grp - imported by shutil, tarfile, E:\Code\AutoWebTest\SingleBind.py
+missing module named pwd - imported by posixpath, shutil, tarfile, http.server, webbrowser, netrc, getpass, E:\Code\AutoWebTest\SingleBind.py
+missing module named _dummy_threading - imported by dummy_threading, E:\Code\AutoWebTest\SingleBind.py
+missing module named 'org.python' - imported by copy, xml.sax, E:\Code\AutoWebTest\SingleBind.py
+missing module named elementtree - imported by xlrd.xlsx
+missing module named lxml - imported by xlrd.xlsx
+missing module named cElementTree - imported by xlrd.xlsx
+missing module named cStringIO - imported by selenium.webdriver.firefox.firefox_profile, xlrd.timemachine
+missing module named copy_reg - imported by cStringIO
+missing module named urllib2 - imported by selenium.webdriver.common.utils, selenium.webdriver.remote.remote_connection, selenium.webdriver.common.service
+missing module named StringIO - imported by selenium.webdriver.remote.webelement
+missing module named urlparse - imported by selenium.webdriver.remote.remote_connection
+missing module named httplib - imported by selenium.webdriver.firefox.webdriver, selenium.webdriver.remote.remote_connection, selenium.webdriver.safari.webdriver, selenium.webdriver.blackberry.webdriver

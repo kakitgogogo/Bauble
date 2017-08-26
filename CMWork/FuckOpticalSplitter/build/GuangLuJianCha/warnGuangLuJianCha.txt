@@ -1,0 +1,33 @@
+missing module named resource - imported by posix, E:\Code\FuckOpticalSplitter\GuangLuJianCha.py
+missing module named posix - imported by os, E:\Code\FuckOpticalSplitter\GuangLuJianCha.py
+missing module named _posixsubprocess - imported by subprocess, E:\Code\FuckOpticalSplitter\GuangLuJianCha.py
+missing module named org - imported by pickle, E:\Code\FuckOpticalSplitter\GuangLuJianCha.py
+missing module named readline - imported by cmd, code, pdb, E:\Code\FuckOpticalSplitter\GuangLuJianCha.py
+excluded module named _frozen_importlib - imported by importlib, importlib.abc, E:\Code\FuckOpticalSplitter\GuangLuJianCha.py
+missing module named _frozen_importlib_external - imported by importlib._bootstrap, importlib, importlib.abc, E:\Code\FuckOpticalSplitter\GuangLuJianCha.py
+missing module named _winreg - imported by platform, E:\Code\FuckOpticalSplitter\GuangLuJianCha.py
+missing module named _scproxy - imported by urllib.request
+missing module named java - imported by platform, E:\Code\FuckOpticalSplitter\GuangLuJianCha.py
+missing module named 'java.lang' - imported by platform, E:\Code\FuckOpticalSplitter\GuangLuJianCha.py, xml.sax._exceptions
+missing module named vms_lib - imported by platform, E:\Code\FuckOpticalSplitter\GuangLuJianCha.py
+missing module named termios - imported by tty, E:\Code\FuckOpticalSplitter\GuangLuJianCha.py, getpass
+missing module named grp - imported by shutil, tarfile, pathlib, E:\Code\FuckOpticalSplitter\GuangLuJianCha.py
+missing module named pwd - imported by posixpath, shutil, tarfile, http.server, webbrowser, pathlib, E:\Code\FuckOpticalSplitter\GuangLuJianCha.py, netrc, getpass
+missing module named 'org.python' - imported by copy, E:\Code\FuckOpticalSplitter\GuangLuJianCha.py, xml.sax
+missing module named _dummy_threading - imported by dummy_threading, E:\Code\FuckOpticalSplitter\GuangLuJianCha.py
+missing module named PyQt4 - imported by pyperclip
+missing module named gtk - imported by pyperclip.clipboards, pyperclip
+missing module named 'PyQt4.QtGui' - imported by pyperclip.clipboards
+missing module named 'Xlib.XK' - imported by pyautogui._pyautogui_x11
+missing module named 'Xlib.ext' - imported by pyautogui._pyautogui_x11
+missing module named Xlib - imported by pyautogui._pyautogui_x11
+missing module named AppKit - imported by pyautogui._pyautogui_osx
+missing module named Quartz - imported by pyautogui._pyautogui_osx
+missing module named PIL._imagingagg - imported by PIL, PIL.ImageDraw
+missing module named numpy - imported by pyscreeze
+missing module named cv2 - imported by pyscreeze
+missing module named Tkinter - imported by pymsgbox, PIL.ImageTk
+missing module named 'PySide.QtCore' - imported by PIL.ImageQt
+missing module named 'PyQt4.QtCore' - imported by PIL.ImageQt
+missing module named cffi - imported by PIL.Image, PIL.PyAccess, PIL.ImageTk
+missing module named __builtin__ - imported by PIL.Image
